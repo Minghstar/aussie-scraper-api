@@ -1,4 +1,5 @@
 # dispatch_scraper.py
+
 import pandas as pd
 from bs4 import BeautifulSoup
 from detectors.detect_platform import detect_platform
@@ -46,6 +47,12 @@ def dispatch_and_scrape(csv_path):
 
     save_athletes(all_athletes)
     print(f"✅ Saved {len(all_athletes)} athletes to scraped_athletes.csv")
+
+# 👇 Add this to make the script callable by main.py
+def run_scraper():
+    csv_path = "college_rosters.csv"  # make sure this CSV exists in your repo
+    dispatch_and_scrape(csv_path)
+
 
 
 
