@@ -1,5 +1,7 @@
 fastapi
 uvicorn
+pandas
 requests
 beautifulsoup4
-selenium
+aiohttp
+python-dotenv
